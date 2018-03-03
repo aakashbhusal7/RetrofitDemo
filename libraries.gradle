@@ -1,0 +1,36 @@
+ext{
+   root=[
+           minSdkVersion: 15,
+           targetSdkVersion: 26,
+           versionCode: 1,
+           versionName: "1.0",
+           testRunner: "android.support.test.runner.AndroidJUnitRunner"
+   ]
+    supportVersion= '26.1.0'
+
+    supportDependencies=[
+            design: "com.android.support:design:$supportVersion",
+            recyclerView: "com.android.support:recyclerview-v7:$supportVersion",
+            appCompat: "com.android.support:appcompat-v7:$supportVersion"
+    ]
+    constraintLayoutVersion='1.0.2'
+
+    constraintLayoutDependencies=[
+            constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    ]
+
+    retrofitVersion='2.2.0'
+    gsonVersion='2.2.0'
+    rxJavaVersion='2.1.5'
+    rxAndroidVersion='2.0.1'
+
+    rxretroDependencies=[
+            retrofit:"com.squareup.retrofit2:retrofit:$retrofitVersion",
+            gson: "com.squareup.retrofit2:converter-gson:$gsonVersion"
+    ]
+    test=[
+            jUnit="junit:junit:4.12",
+            testRunner="com.android.support.test:runner:1.0.1",
+            testEspresso="com.android.support.test.espresso:espresso-core:3.0.1."
+    ]
+}

@@ -35,6 +35,14 @@ dependencies {
 
     implementation rxretroDependencies.retrofit
     implementation rxretroDependencies.gson
+    implementation rxretroDependencies.rxAndroid
+    implementation rxretroDependencies.rxJava
+    implementation rxretroDependencies.rxRetroAdapter
+
+    implementation daggerDependencies.daggerAndroid
+    implementation daggerDependencies.daggerAndroidSupport
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

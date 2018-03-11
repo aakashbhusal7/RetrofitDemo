@@ -19,6 +19,7 @@ ext{
             constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
     ]
 
+    rxAdapterVersion='2.3.0'
     retrofitVersion='2.2.0'
     gsonVersion='2.2.0'
     rxJavaVersion='2.1.5'
@@ -26,11 +27,22 @@ ext{
 
     rxretroDependencies=[
             retrofit:"com.squareup.retrofit2:retrofit:$retrofitVersion",
-            gson: "com.squareup.retrofit2:converter-gson:$gsonVersion"
+            gson: "com.squareup.retrofit2:converter-gson:$gsonVersion",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            rxJava: "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxRetroAdapter: "com.squareup.retrofit2:adapter-rxjava2:$rxAdapterVersion"
     ]
+    daggerVersion= '2.11'
+
+     daggerDependencies=[
+             daggerAndroid: "com.google.dagger:dagger-android:$daggerVersion",
+             daggerAndroidSupport: "com.google.dagger:dagger-android-support:$daggerVersion"
+     ]
+
     test=[
             jUnit="junit:junit:4.12",
             testRunner="com.android.support.test:runner:1.0.1",
             testEspresso="com.android.support.test.espresso:espresso-core:3.0.1."
     ]
+
 }

@@ -2,6 +2,8 @@ package practice.example.aakash.myretrofitpractice.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import javax.inject.Inject;
+
 /**
  * Created by aakash on 3/3/18.
  */
@@ -39,6 +41,7 @@ public class Employee {
     @SerializedName("phone")
     private String phone;
 
+    @Inject
     public Employee(String name, String email, String  phone){
         this.name=name;
         this.email=email;

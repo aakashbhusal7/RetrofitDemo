@@ -24,9 +24,7 @@ import practice.example.aakash.myretrofitpractice.model.Employee;
 import practice.example.aakash.myretrofitpractice.model.EmployeeList;
 import practice.example.aakash.myretrofitpractice.network.ApiService;
 import practice.example.aakash.myretrofitpractice.network.RetrofitClient;
-//import retrofit2.Call;
-//import retrofit2.Callback;
-//import retrofit2.Response;
+
 
 public class MainActivity extends AppCompatActivity {
     private DisplayAdapter displayAdapter;
@@ -39,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        callRetrofit();
+        callRX();
     }
 
-    private void callRetrofit() {
+    private void callRX() {
         ApiService apiService=RetrofitClient.getRetrofitClient().create(ApiService.class);
         Observable<EmployeeList> observable = apiService.getData(123)
                 .subscribeOn(Schedulers.io())
